@@ -56,11 +56,14 @@ body{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin: 50px 0;
+    margin: 60px 0;
 }
 .banner-left{
     width: 90%;
     margin-left: 30px ;
+}
+.banner-left p{
+    line-height: 1.5em;
 }
 .banner-left h1{
     font-size: 45px;
@@ -143,6 +146,14 @@ body{
     margin-top: 15px;
     line-height: 2em;
 }
+.product-details>a{
+    color: rgb(235, 130, 92);
+    text-decoration: none;
+}
+.product-details>a>span{
+    padding: 0 10px;
+    font-weight: 600;
+}
 .see-more{
     margin-top:50px;
     text-align: end;
@@ -166,8 +177,10 @@ body{
     margin-left: 30px;
 }
 .feature-right{
-    width: 90%;
-    
+    width: 90%;  
+}
+.feature-right p{
+    line-height: 1.5em;
 }
 .feature-button{
     color: white;
@@ -186,7 +199,11 @@ body{
     background-color: #0a0826;
     text-align: center;
     height: 200px;
-    padding-top:60px;
+    padding-top:30px;
+}
+
+.footer-section>h2, p{
+    line-height: 1.5em;
 }
 
 
