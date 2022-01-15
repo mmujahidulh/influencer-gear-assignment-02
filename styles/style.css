@@ -1,0 +1,248 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Merriweather&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500&family=Raleway:wght@500;600;700&family=Work+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #ffffff;
+}
+
+/* common styles  */
+
+.container{
+    max-width: 1200px;
+    margin:auto;   
+}
+
+/* header styles  */
+
+.main-header{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title{
+    margin-left: 30px;
+}
+
+.nav-right{
+    margin-right: 20px;
+}
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;  
+}
+.navigation li a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+   
+}
+
+/* banner section  */
+     
+.banner{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 50px 0;
+}
+.banner-left{
+    width: 90%;
+    margin-left: 30px ;
+}
+.banner-left h1{
+    font-size: 45px;
+}
+
+.banner-right{
+    width: 90%;
+    margin-left: 30px;
+}
+
+.banner-right img{
+    width: 70%;
+}
+
+.banner-button{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #e02c6d;
+    padding: 10px 40px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+/* Brand Logo section  */
+
+.horizontal-line{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    margin: 30px 30px;
+}
+
+
+/* -------------------------------
+       Popular sections
+-----------------------------------  */
+
+.popular-section{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.popular-title{
+    text-align: center;
+    margin: 100px 0 40px 0;
+}
+.product-collections{
+    display: grid;
+    grid-gap:40px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+   
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 320px;
+    height: 450px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 25px rgb(206, 201, 201);
+       
+}
+.products-image{
+    width: 300px;
+    height: 400px;
+}
+.products-image img{
+    width: 80%;
+}
+
+.product-details{
+    margin-top: 15px;
+    line-height: 2em;
+}
+.see-more{
+    margin-top:50px;
+    text-align: end;
+}
+
+.see-more p{
+    color: #e02c6d;
+}
+
+/* feature section css  */
+
+.feature{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin: 50px 0;
+}
+.feature-left{
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+}
+.feature-right{
+    width: 90%;
+    
+}
+.feature-button{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #e02c6d;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border: none;
+   
+}
+
+
+.footer-section{
+    color: #ffffff;
+    background-color: #0a0826;
+    text-align: center;
+    height: 200px;
+    padding-top:60px;
+}
+
+
+.social-icon{
+    margin-top: 15px;
+}
+.social-icon a{
+    color: white;
+    background-color: #3b385f;
+    margin-left: 10px;
+    padding: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+
+@media (max-width:950px) {
+    
+    .banner{
+        
+        grid-template-columns: repeat(1, 1fr);
+       margin-left: 50px;
+        
+    }
+    .brand-logo{
+        display: none;
+    }
+    .product-collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature{
+        grid-template-columns: repeat(1,1fr); 
+    }
+    
+}
+
+@media (max-width:688px) {
+    
+    .banner{
+        
+        grid-template-columns: repeat(1, 1fr);
+       margin-left: 50px;
+        
+    }
+    .brand-logo{
+        display: none;
+    }
+    .product-collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature{
+        grid-template-columns: repeat(1,1fr); 
+    }
+    
+}
+
