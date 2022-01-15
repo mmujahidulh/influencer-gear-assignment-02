@@ -176,6 +176,12 @@ body{
     height: 300px;
     margin-left: 30px;
 }
+
+.feature-left img{
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
 .feature-right{
     width: 90%;  
 }
@@ -221,8 +227,11 @@ body{
 }
 
 
-@media (max-width:950px) {
-    
+@media (max-width:992px) {
+    .navigation li a{ 
+        margin-left: 5px;
+        padding: 5px 8px; 
+    }
     .banner{
         
         grid-template-columns: repeat(1, 1fr);
@@ -239,10 +248,25 @@ body{
     .feature{
         grid-template-columns: repeat(1,1fr); 
     }
+    .feature-left img{
+        width: 400px;
+        height: 300px;
+    }
+    .feature-right{
+        margin-left: 25px;
+    }
     
 }
 
 @media (max-width:688px) {
+
+    .header-title{
+        margin-left: 90px;
+    }
+
+    .nav-right{
+        display: none;
+    }
     
     .banner{
         
@@ -258,7 +282,8 @@ body{
     }
 
     .feature{
-        grid-template-columns: repeat(1,1fr); 
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 15px;
     }
     
 }
